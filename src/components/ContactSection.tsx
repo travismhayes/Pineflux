@@ -10,16 +10,21 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-balance text-white sm:text-4xl">
-              Tell us about your project
+              Tell me about your project
             </h2>
+            <p className="mt-6 text-base text-neutral-300">
+              A short email is all it takes. You&apos;ll hear back within one
+              business day, and you&apos;ll always be talking to the person who
+              does the work.
+            </p>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Say Hej
+                Get in touch
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">
               <h3 className="font-display text-base font-semibold text-white">
-                Our offices
+                Based in
               </h3>
               <Offices
                 invert

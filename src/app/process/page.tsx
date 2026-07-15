@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 
-import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -56,27 +55,31 @@ function Section({
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="Understand" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          Every project starts with a conversation about your{' '}
+          <strong className="font-semibold text-neutral-950">business</strong>,
+          not about technology. What does the work actually look like day to
+          day? Where does time disappear? What breaks, and what does it cost
+          when it does?
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          From there I map the workflow we&apos;re fixing and write up a{' '}
+          <strong className="font-semibold text-neutral-950">
+            plain-English scope
+          </strong>
+          : what we&apos;re building, what we&apos;re deliberately not
+          building yet, what it costs, and how long it takes. Fixed scope,
+          fixed price wherever possible, so there are no surprises.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          This is also where I&apos;ll tell you if you{' '}
+          <strong className="font-semibold text-neutral-950">
+            shouldn&apos;t hire me
+          </strong>
+          . If an off-the-shelf tool solves your problem for $40 a month, you
+          deserve to know that before you spend real money on custom software.
         </p>
       </div>
 
@@ -84,12 +87,10 @@ function Discover() {
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Free initial consultation</TagListItem>
+        <TagListItem>Workflow mapping</TagListItem>
+        <TagListItem>Build-vs-buy recommendation</TagListItem>
+        <TagListItem>Written scope and fixed quote</TagListItem>
       </TagList>
     </Section>
   )
@@ -100,67 +101,52 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Work happens in short cycles with something{' '}
+          <strong className="font-semibold text-neutral-950">visible</strong>{' '}
+          at the end of each one. You&apos;re looking at real screens and real
+          data within the first couple of weeks, not waiting for a big reveal
+          at the end.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          You get a short progress update every week in plain English: what
+          got done, what&apos;s next, and anything I need from you. Questions
+          get answered by the person writing the code, usually the same
+          business day.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Scope changes are handled honestly. Small adjustments are part of
+          the work. If something genuinely changes the size of the project, you
+          get the cost and timeline impact in writing{' '}
+          <strong className="font-semibold text-neutral-950">before</strong>{' '}
+          I build it, and you decide.
         </p>
       </div>
-
-      <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
-        className="mt-12"
-      >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
-      </Blockquote>
     </Section>
   )
 }
 
 function Deliver() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Deliver & support" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          Launch is planned around your business, not around my calendar. We
+          test with your real data and your real team before anything goes
+          live, and I&apos;m{' '}
+          <strong className="font-semibold text-neutral-950">present</strong>{' '}
+          for the switchover, not on to the next client.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
+          You get everything: the code, the accounts, the credentials, and
+          documentation written for whoever comes after me. No hostage
+          situations. If you ever want another developer to take over, they
+          can.
         </p>
         <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          After launch, most clients keep a small monthly arrangement for
+          fixes, changes, and questions. Others call when they need something.
+          Both are{' '}
+          <strong className="font-semibold text-neutral-950">fine</strong>.
         </p>
       </div>
 
@@ -168,17 +154,18 @@ function Deliver() {
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem title="Testing with real data">
+          Software gets tested against your actual workflows and edge cases
+          before launch, with your team involved, so day one is boring in the
+          best way.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="Full ownership">
+          Code, accounts, credentials, and documentation are yours from day
+          one. You are never locked in to Pineflux.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="Support that fits">
+          A monthly support arrangement if you want a standing safety net, or
+          hourly help when you need it. No mandatory retainers.
         </ListItem>
       </List>
     </Section>
@@ -196,43 +183,41 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow="Principles"
+        title="The rules the work follows"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          None of these are marketing. They are the standards the work is held
+          to, and you should hold me to them too.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="Honest scoping">
+            The estimate you get is the estimate I believe, including the parts
+            that are uncertain. Bad news early beats bad news late.
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          <GridListItem title="Boring technology">
+            Proven tools over shiny ones. Your business software should be
+            built on technology that will still be supported in ten years.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+          <GridListItem title="Small releases">
+            Working software early and often, so course corrections happen
+            when they&apos;re cheap instead of when they&apos;re painful.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          <GridListItem title="Plain English">
+            If I can&apos;t explain a technical decision in terms of what it
+            means for your business, I haven&apos;t finished thinking about it.
           </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+          <GridListItem title="Your ownership">
+            Everything built for you belongs to you. Code, data, accounts,
+            documentation. Leaving should always be easy, so staying means
+            something.
           </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+          <GridListItem title="Maintainable first">
+            Every line is written knowing someone else may maintain it someday.
+            That discipline is what makes software cheap to change later.
           </GridListItem>
         </GridList>
       </Container>
@@ -241,19 +226,20 @@ function Values() {
 }
 
 export const metadata: Metadata = {
-  title: 'Our Process',
+  title: 'How We Work',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'A simple, honest process: understand the business, build in short visible cycles, deliver with full ownership and support that fits.',
 }
 
 export default function Process() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="How we work" title="A process built on showing up and showing work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          No account managers, no black box, no big reveal. Just a short,
+          honest path from &ldquo;here&apos;s our problem&rdquo; to software
+          your team relies on, with working results visible every week along
+          the way.
         </p>
       </PageIntro>
 

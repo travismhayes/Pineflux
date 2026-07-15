@@ -1,36 +1,31 @@
-# Studio
+# Pineflux
 
-Studio is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+The website for [Pineflux](https://pineflux.com), the software studio of Travis Hayes: business applications, systems integrations, ecommerce, and websites for small businesses and entrepreneurs.
 
-## Getting started
+Built with [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and MDX, based on the Tailwind Plus "Studio" template (commercial license).
 
-To get started with this template, first install the npm dependencies:
+## Development
 
 ```bash
 npm install
-```
-
-Next, run the development server:
-
-```bash
 npm run dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Customizing
+## Content
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+- **Service pages** live in `src/app/work/*/page.mdx`. Each exports a `caseStudy` object (title, description, summary, service, fit, timeline) plus MDX body content.
+- **Blog posts** live in `src/app/blog/*/page.mdx`. Each exports an `article` object with date, title, description, and author.
+- **Shared copy** (contact CTA, footer, location) lives in `src/components`.
 
-## License
+## Forms (Netlify)
 
-This site template is a commercial product and is licensed under the [Tailwind Plus license](https://tailwindcss.com/plus/license).
+The contact and newsletter forms POST to `/__forms.html`, a hidden static file that lets Netlify's build bots detect the forms. This only works when the site is deployed on Netlify with form detection enabled (Site settings → Forms). Submissions appear in the Netlify dashboard; configure email notifications there.
 
-## Learn more
+## Deploy checklist
 
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Framer Motion](https://www.framer.com/docs/) - the official Framer Motion documentation
-- [MDX](https://mdxjs.com/) - the official MDX documentation
+- [ ] Deploy to Netlify, enable form detection, add a form notification to your email
+- [ ] Confirm `hello@pineflux.com` routes to your inbox (Cloudflare Email Routing)
+- [ ] Submit `https://pineflux.com/sitemap.xml` in Google Search Console
+- [ ] Create a Google Business Profile (helps local "software developer Seattle" searches)

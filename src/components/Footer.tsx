@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
@@ -7,11 +10,11 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'Services',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Business applications', href: '/work/business-applications' },
+      { title: 'Integrations', href: '/work/integrations-automation' },
+      { title: 'Ecommerce', href: '/work/ecommerce' },
       {
         title: (
           <>
@@ -26,9 +29,9 @@ const navigation = [
     title: 'Company',
     links: [
       { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
+      { title: 'How we work', href: '/process' },
       { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Contact', href: '/contact' },
     ],
   },
   {
@@ -79,28 +82,68 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function NewsletterForm() {
+  let [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setStatus('submitting')
+
+    let data = new FormData(event.currentTarget)
+
+    await fetch('/__forms.html', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data as any).toString(),
+    })
+
+    setStatus('success')
+  }
+
+  if (status === 'success') {
+    return (
+      <div className="max-w-sm">
+        <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+          You&apos;re on the list
+        </h2>
+        <p className="mt-4 text-sm text-neutral-700">
+          Thanks for subscribing. Practical software advice, no spam,
+          unsubscribe whenever you like.
+        </p>
+      </div>
+    )
+  }
+
   return (
-    <form className="max-w-sm">
+    <form className="max-w-sm" onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="newsletter" />
+      <p className="hidden">
+        <label>
+          Don&apos;t fill this out: <input name="bot-field" />
+        </label>
+      </p>
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+        Practical software advice for your business
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        A short, occasional email on getting more out of the software that runs
+        your business. No jargon, no spam.
       </p>
       <div className="relative mt-6">
         <input
           type="email"
+          name="email"
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"
+          required
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
             aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+            disabled={status === 'submitting'}
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800 disabled:opacity-50"
           >
             <ArrowIcon className="w-4" />
           </button>
@@ -125,7 +168,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Pineflux {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
