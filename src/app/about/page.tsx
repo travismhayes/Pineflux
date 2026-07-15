@@ -22,25 +22,25 @@ function HowIWork() {
         invert
       >
         <p>
-          Everything about Pineflux is a consequence of one decision: no layers
-          between you and your developer.
+          Most of how I work comes down to one thing: you deal directly with
+          the person building your software.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Plain English" invert>
-            You should never need a translator for your own project. Scope,
-            trade-offs, and progress are explained in the language of your
-            business, not in jargon.
+            You should never need a translator for your own project. I explain
+            scope, trade-offs, and progress in the language of your business.
           </GridListItem>
           <GridListItem title="Small by design" invert>
             Pineflux takes on a few projects at a time, so every project gets
-            senior attention. If the timeline will not work, you will know
-            before you commit, not after.
+            senior attention. If a timeline won&apos;t work, I&apos;ll tell
+            you before you commit.
           </GridListItem>
           <GridListItem title="Built to hand off" invert>
-            Readable code, boring technology, and real documentation. You are
-            never locked in, which is exactly why clients stay.
+            Readable code, boring technology, and real documentation, so
+            another developer could pick things up whenever you want.
+            I&apos;d rather earn the next project than lock you into it.
           </GridListItem>
         </GridList>
       </Container>
@@ -117,22 +117,19 @@ export default async function About() {
     <RootLayout>
       <PageIntro eyebrow="About" title="A software studio the size of the problem">
         <p>
-          Pineflux is a founder-led studio, and that is not a limitation.
-          It&apos;s the product.
+          Pineflux is a studio of one, and that&apos;s on purpose.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
             Most small businesses don&apos;t need an agency. They need one
             senior engineer who understands how businesses operate, takes the
-            time to learn how theirs does, and builds exactly what&apos;s
-            needed, nothing more. That is the entire premise of Pineflux.
+            time to learn how theirs does, and builds what&apos;s actually
+            needed. Pineflux is built around that idea.
           </p>
           <p>
-            There is no sales team, no account managers, and no junior
-            developers learning on your budget. When you work with Pineflux,
-            you work with me, Travis Hayes, from the first conversation to the
-            last deploy. It&apos;s a deliberately small studio that does a
-            small number of things unusually well.
+            When you work with Pineflux, you work with me, Travis Hayes, from
+            the first conversation to the last deploy. I keep the studio small
+            so I can be picky about the projects I take and do them well.
           </p>
         </div>
       </PageIntro>

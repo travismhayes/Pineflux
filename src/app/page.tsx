@@ -65,8 +65,8 @@ function Services({ services }: { services: Array<MDXEntry<CaseStudy>> }) {
       >
         <p>
           Pineflux builds the systems small businesses actually need: business
-          applications, integrations, ecommerce, and websites. Scoped honestly,
-          built to be maintained, and delivered by the person you hired.
+          applications, integrations, ecommerce, and websites. Everything is
+          scoped honestly and built by the person you hired.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -118,9 +118,8 @@ function FounderNote() {
           <figure className="mx-auto max-w-4xl">
             <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
               <p className="before:content-['\201C'] after:content-['\201D'] sm:before:absolute sm:before:right-full">
-                You will never be handed off to a junior developer or an
-                account manager. I scope the work, I write the code, and I
-                answer the emails.
+                There is nobody here to hand you off to. I scope the work,
+                write the code, and answer the emails.
               </p>
             </blockquote>
             <figcaption className="mt-10 text-base font-semibold text-neutral-950">
@@ -143,7 +142,8 @@ function WhyFounderLed() {
       >
         <p>
           Agencies put layers between you and the person doing the work.
-          Pineflux removes them. That changes more than you might expect.
+          Pineflux removes them, and most of what makes working with me
+          different follows from that.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -160,8 +160,8 @@ function WhyFounderLed() {
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
             <ListItem title="One point of contact">
               The person you talk to on day one is the person who designs,
-              builds, and ships your project. Nothing gets lost in translation
-              because there is no translation.
+              builds, and ships your project, so nothing gets lost between a
+              salesperson&apos;s promise and a developer&apos;s backlog.
             </ListItem>
             <ListItem title="Senior work only">
               Over a decade of professional experience building business
@@ -203,8 +203,9 @@ export default async function Home() {
           <p className="mt-6 text-xl text-neutral-600">
             Pineflux is a small software studio in Seattle, run by Travis
             Hayes. I build business applications, integrations, and ecommerce
-            for small businesses and entrepreneurs: the kind of software that
-            quietly runs your day instead of getting in its way.
+            for small businesses and entrepreneurs. Most of it is the
+            unglamorous software that keeps orders moving, systems in sync,
+            and reports accurate.
           </p>
           <div className="mt-8 flex items-center gap-6">
             <Button href="/contact">Start a project</Button>

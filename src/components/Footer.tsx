@@ -106,8 +106,7 @@ function NewsletterForm() {
           You&apos;re on the list
         </h2>
         <p className="mt-4 text-sm text-neutral-700">
-          Thanks for subscribing. Practical software advice, no spam,
-          unsubscribe whenever you like.
+          Thanks for subscribing. You can unsubscribe anytime.
         </p>
       </div>
     )
@@ -125,8 +124,8 @@ function NewsletterForm() {
         Practical software advice for your business
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        A short, occasional email on getting more out of the software that runs
-        your business. No jargon, no spam.
+        A short, occasional email on getting more out of the software that
+        runs your business. Written for owners, easy to unsubscribe from.
       </p>
       <div className="relative mt-6">
         <input

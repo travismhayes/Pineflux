@@ -70,8 +70,8 @@ function Discover() {
             plain-English scope
           </strong>
           : what we&apos;re building, what we&apos;re deliberately not
-          building yet, what it costs, and how long it takes. Fixed scope,
-          fixed price wherever possible, so there are no surprises.
+          building yet, what it costs, and how long it takes. Wherever
+          possible I quote a fixed scope at a fixed price.
         </p>
         <p>
           This is also where I&apos;ll tell you if you{' '}
@@ -104,8 +104,8 @@ function Build() {
           Work happens in short cycles with something{' '}
           <strong className="font-semibold text-neutral-950">visible</strong>{' '}
           at the end of each one. You&apos;re looking at real screens and real
-          data within the first couple of weeks, not waiting for a big reveal
-          at the end.
+          data within the first couple of weeks instead of waiting until the
+          end to see anything.
         </p>
         <p>
           You get a short progress update every week in plain English: what
@@ -130,17 +130,17 @@ function Deliver() {
     <Section title="Deliver & support" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Launch is planned around your business, not around my calendar. We
-          test with your real data and your real team before anything goes
-          live, and I&apos;m{' '}
-          <strong className="font-semibold text-neutral-950">present</strong>{' '}
-          for the switchover, not on to the next client.
+          We plan launch around your business calendar: a quiet season, a
+          weekend, whatever causes the least disruption. We test with your
+          real data and your real team before anything goes live, and
+          I&apos;m{' '}
+          <strong className="font-semibold text-neutral-950">around</strong>{' '}
+          for the switchover and the first days after it.
         </p>
         <p>
           You get everything: the code, the accounts, the credentials, and
-          documentation written for whoever comes after me. No hostage
-          situations. If you ever want another developer to take over, they
-          can.
+          documentation written for whoever comes after me. If you ever want
+          another developer to take over, they&apos;ll have what they need.
         </p>
         <p>
           After launch, most clients keep a small monthly arrangement for
@@ -161,11 +161,11 @@ function Deliver() {
         </ListItem>
         <ListItem title="Full ownership">
           Code, accounts, credentials, and documentation are yours from day
-          one. You are never locked in to Pineflux.
+          one. You could leave at any point and take all of it with you.
         </ListItem>
         <ListItem title="Support that fits">
           A monthly support arrangement if you want a standing safety net, or
-          hourly help when you need it. No mandatory retainers.
+          hourly help when you need it. Retainers are optional.
         </ListItem>
       </List>
     </Section>
@@ -187,8 +187,8 @@ function Values() {
         title="The rules the work follows"
       >
         <p>
-          None of these are marketing. They are the standards the work is held
-          to, and you should hold me to them too.
+          These are the standards I hold the work to, and you should hold me
+          to them too.
         </p>
       </SectionIntro>
 
@@ -211,9 +211,9 @@ function Values() {
             means for your business, I haven&apos;t finished thinking about it.
           </GridListItem>
           <GridListItem title="Your ownership">
-            Everything built for you belongs to you. Code, data, accounts,
-            documentation. Leaving should always be easy, so staying means
-            something.
+            Everything built for you belongs to you: code, data, accounts,
+            documentation. It should always be easy to walk away with
+            everything in hand.
           </GridListItem>
           <GridListItem title="Maintainable first">
             Every line is written knowing someone else may maintain it someday.
@@ -236,10 +236,9 @@ export default function Process() {
     <RootLayout>
       <PageIntro eyebrow="How we work" title="A process built on showing up and showing work">
         <p>
-          No account managers, no black box, no big reveal. Just a short,
-          honest path from &ldquo;here&apos;s our problem&rdquo; to software
-          your team relies on, with working results visible every week along
-          the way.
+          You&apos;ll always know where your project stands. The path from
+          &ldquo;here&apos;s our problem&rdquo; to software your team relies
+          on is short, and you see working results every week along the way.
         </p>
       </PageIntro>
 
