@@ -58,28 +58,28 @@ function Discover() {
     <Section title="Understand" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Every project starts with a conversation about your{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>,
-          not about technology. What does the work actually look like day to
-          day? Where does time disappear? What breaks, and what does it cost
-          when it does?
+          First, I learn how the work moves through your{' '}
+          <strong className="font-semibold text-neutral-950">business</strong>.
+          Who does what? Which systems are involved? Where does the team lose
+          time, re-enter information, or work around a tool that no longer
+          fits?
         </p>
         <p>
-          From there I map the workflow we&apos;re fixing and write up a{' '}
+          Then I map the workflow we&apos;re fixing and write a{' '}
           <strong className="font-semibold text-neutral-950">
             plain-English scope
           </strong>
-          : what we&apos;re building, what we&apos;re deliberately not
-          building yet, what it costs, and how long it takes. Wherever
-          possible I quote a fixed scope at a fixed price.
+          . It covers what I will build, what can wait, what it costs, and how
+          long it should take. I use fixed scopes and fixed prices wherever the
+          work is predictable enough.
         </p>
         <p>
-          This is also where I&apos;ll tell you if you{' '}
+          You will also get a{' '}
           <strong className="font-semibold text-neutral-950">
-            shouldn&apos;t hire me
+            build-or-buy recommendation
           </strong>
-          . If an off-the-shelf tool solves your problem for $40 a month, you
-          deserve to know that before you spend real money on custom software.
+          . If a $40-a-month product handles the job well, I will point you to
+          it before you spend real money on custom software.
         </p>
       </div>
 
@@ -101,24 +101,23 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Work happens in short cycles with something{' '}
+          I work in short cycles and put something{' '}
           <strong className="font-semibold text-neutral-950">visible</strong>{' '}
-          at the end of each one. You&apos;re looking at real screens and real
-          data within the first couple of weeks instead of waiting until the
-          end to see anything.
+          in front of you early. Within the first couple of weeks, you should
+          be looking at real screens and testing the important parts of the
+          workflow.
         </p>
         <p>
-          You get a short progress update every week in plain English: what
-          got done, what&apos;s next, and anything I need from you. Questions
-          get answered by the person writing the code, usually the same
-          business day.
+          Each week, you get a short update covering what is finished, what is
+          next, and any decision I need from you. When you have a question, you
+          ask the person writing the code.
         </p>
         <p>
-          Scope changes are handled honestly. Small adjustments are part of
-          the work. If something genuinely changes the size of the project, you
-          get the cost and timeline impact in writing{' '}
+          Small adjustments are part of the work. If a request changes the
+          size of the project, I put the cost and schedule impact in writing{' '}
           <strong className="font-semibold text-neutral-950">before</strong>{' '}
-          I build it, and you decide.
+          I build it. You decide whether it belongs in this release or a later
+          one.
         </p>
       </div>
     </Section>
@@ -130,12 +129,9 @@ function Deliver() {
     <Section title="Deliver & support" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We plan launch around your business calendar: a quiet season, a
-          weekend, whatever causes the least disruption. We test with your
-          real data and your real team before anything goes live, and
-          I&apos;m{' '}
-          <strong className="font-semibold text-neutral-950">around</strong>{' '}
-          for the switchover and the first days after it.
+          We plan launch around your business calendar and test with your real
+          data and team before anything goes live. I handle the switchover and
+          stay close during the first days of normal use.
         </p>
         <p>
           You get everything: the code, the accounts, the credentials, and
@@ -143,10 +139,10 @@ function Deliver() {
           another developer to take over, they&apos;ll have what they need.
         </p>
         <p>
-          After launch, most clients keep a small monthly arrangement for
-          fixes, changes, and questions. Others call when they need something.
-          Both are{' '}
-          <strong className="font-semibold text-neutral-950">fine</strong>.
+          After launch, choose the level of{' '}
+          <strong className="font-semibold text-neutral-950">support</strong>{' '}
+          your business needs. I can provide ongoing maintenance and changes,
+          or you can get in touch when a specific need comes up.
         </p>
       </div>
 
@@ -156,8 +152,8 @@ function Deliver() {
       <List className="mt-8">
         <ListItem title="Testing with real data">
           Software gets tested against your actual workflows and edge cases
-          before launch, with your team involved, so day one is boring in the
-          best way.
+          before launch, with your team involved. That catches surprises while
+          they are still easy to fix.
         </ListItem>
         <ListItem title="Full ownership">
           Code, accounts, credentials, and documentation are yours from day
@@ -194,30 +190,32 @@ function Values() {
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Honest scoping">
-            The estimate you get is the estimate I believe, including the parts
-            that are uncertain. Bad news early beats bad news late.
+          <GridListItem title="Documented scope">
+            Estimates include the parts I know and the parts that still need
+            investigation. I explain the uncertainty before it affects your
+            budget or schedule.
           </GridListItem>
           <GridListItem title="Boring technology">
-            Proven tools over shiny ones. Your business software should be
-            built on technology that will still be supported in ten years.
+            I choose mature, widely used tools with a good chance of being
+            supported for years. New technology needs a business reason to
+            earn its place in the project.
           </GridListItem>
           <GridListItem title="Small releases">
-            Working software early and often, so course corrections happen
-            when they&apos;re cheap instead of when they&apos;re painful.
+            You see useful pieces of the system as they are completed. Feedback
+            arrives while changing direction is still inexpensive.
           </GridListItem>
           <GridListItem title="Plain English">
-            If I can&apos;t explain a technical decision in terms of what it
-            means for your business, I haven&apos;t finished thinking about it.
+            Technical choices come with a practical explanation of the cost,
+            risk, maintenance, and effect on the people using the system.
           </GridListItem>
           <GridListItem title="Your ownership">
-            Everything built for you belongs to you: code, data, accounts,
-            documentation. It should always be easy to walk away with
-            everything in hand.
+            The code, data, accounts, and documentation belong to you. I set
+            projects up so you can access and transfer each part without
+            depending on Pineflux.
           </GridListItem>
           <GridListItem title="Maintainable first">
-            Every line is written knowing someone else may maintain it someday.
-            That discipline is what makes software cheap to change later.
+            Clear structure, readable code, and current documentation reduce
+            the time it takes to fix or extend the software later.
           </GridListItem>
         </GridList>
       </Container>
@@ -228,17 +226,17 @@ function Values() {
 export const metadata: Metadata = {
   title: 'How We Work',
   description:
-    'A simple, honest process: understand the business, build in short visible cycles, deliver with full ownership and support that fits.',
+    'See how Pineflux scopes, builds, launches, and supports custom software for small businesses.',
 }
 
 export default function Process() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="How we work" title="A process built on showing up and showing work">
+      <PageIntro eyebrow="How we work" title="Know what is happening at every step">
         <p>
-          You&apos;ll always know where your project stands. The path from
-          &ldquo;here&apos;s our problem&rdquo; to software your team relies
-          on is short, and you see working results every week along the way.
+          A clear scope, working software early, and a short update every week
+          keep the project understandable. You know what is finished, what is
+          next, and when I need a decision from you.
         </p>
       </PageIntro>
 

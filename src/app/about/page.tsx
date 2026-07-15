@@ -18,12 +18,12 @@ function HowIWork() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="How I work"
-        title="The advantages of hiring the person who does the work."
+        title="Direct access makes for better software"
         invert
       >
         <p>
-          Most of how I work comes down to one thing: you deal directly with
-          the person building your software.
+          You can ask a question, make a decision, and move the project forward
+          in the same conversation.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -33,14 +33,14 @@ function HowIWork() {
             scope, trade-offs, and progress in the language of your business.
           </GridListItem>
           <GridListItem title="Small by design" invert>
-            Pineflux takes on a few projects at a time, so every project gets
-            senior attention. If a timeline won&apos;t work, I&apos;ll tell
-            you before you commit.
+            I limit the number of active projects so I have time to understand
+            the details and do the work myself. You get a realistic schedule
+            before you commit.
           </GridListItem>
           <GridListItem title="Built to hand off" invert>
-            Readable code, boring technology, and real documentation, so
-            another developer could pick things up whenever you want.
-            I&apos;d rather earn the next project than lock you into it.
+            You receive readable code, proven technology, and useful
+            documentation. Your business can keep working with me or hand the
+            project to another developer later.
           </GridListItem>
         </GridList>
       </Container>
@@ -66,18 +66,16 @@ function Founder() {
                 keep operations moving.
               </p>
               <p>
-                Most of that work taught me the same lesson from different
-                angles: the software that helps a business most is rarely the
-                flashiest. It&apos;s the tool that fits the workflow so well
-                that people stop noticing it. That&apos;s the kind of software
-                Pineflux exists to build.
+                I&apos;ve seen where business software earns its keep. Orders
+                move without being retyped, billing runs without a monthly
+                scramble, and the numbers people use to make decisions are
+                current. Pineflux focuses on that practical work.
               </p>
               <p>
-                Small businesses usually get a bad deal in software. Agencies
-                are built for enterprise budgets, freelancer marketplaces are a
-                lottery, and off-the-shelf tools fit until the day they
-                don&apos;t. A small, senior, founder-led studio is my answer to
-                that gap.
+                Small businesses need experienced software help at a sensible
+                scale. Pineflux can take on the focused application,
+                integration, store, or website that is too specific for a
+                packaged tool and too small for a large agency team.
               </p>
             </div>
           </div>
@@ -107,7 +105,7 @@ function Founder() {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Pineflux is the software studio of Travis Hayes: a decade of experience building business applications, integrations, and ecommerce, available to small businesses.',
+    'Meet Travis Hayes, the software engineer behind Pineflux, with more than a decade of experience in business applications, integrations, and ecommerce.',
 }
 
 export default async function About() {
@@ -115,21 +113,21 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="About" title="A software studio the size of the problem">
+      <PageIntro eyebrow="About" title="Senior software work, kept personal">
         <p>
-          Pineflux is a studio of one, and that&apos;s on purpose.
+          Pineflux is the software studio of Travis Hayes.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Most small businesses don&apos;t need an agency. They need one
-            senior engineer who understands how businesses operate, takes the
-            time to learn how theirs does, and builds what&apos;s actually
-            needed. Pineflux is built around that idea.
+            I work with small-business owners who have a valuable problem
+            trapped between a spreadsheet, a packaged product, and a large
+            agency quote. I learn how the work moves through the business and
+            build the smallest useful solution.
           </p>
           <p>
-            When you work with Pineflux, you work with me, Travis Hayes, from
-            the first conversation to the last deploy. I keep the studio small
-            so I can be picky about the projects I take and do them well.
+            I handle the discovery, design, development, and launch myself.
+            Keeping that responsibility in one place lets me take on a limited
+            number of projects and give each one proper attention.
           </p>
         </div>
       </PageIntro>
@@ -148,7 +146,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Plain-English writing about the software that runs small businesses: what to build, what to buy, and how to avoid expensive mistakes."
+        intro="Notes for business owners deciding what to build, what to buy, and when their current tools have become more expensive than replacing them."
         pages={blogArticles}
       />
 

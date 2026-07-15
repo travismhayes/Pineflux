@@ -15,14 +15,14 @@ import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 
 const problems = [
-  'Our systems don’t talk to each other',
-  'We run the whole business out of spreadsheets',
-  'Orders get re-typed into three different tools',
-  'Our website doesn’t bring in customers',
-  'Reports take days to pull together',
-  'The developer who built it disappeared',
-  'We’ve outgrown our off-the-shelf software',
-  'Online sales work, but barely',
+  'Our systems never agree with each other',
+  'The whole business runs out of one spreadsheet',
+  'Every order gets typed in three times',
+  'Our website looks fine, but leads are scarce',
+  'A simple report takes half a day',
+  'Nobody knows how the old software works',
+  'Our software is getting in the team’s way',
+  'Online orders create hours of back-office work',
 ]
 
 function Problems() {
@@ -31,7 +31,7 @@ function Problems() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Sound familiar? These are the problems Pineflux fixes
+            The problems Pineflux is built to solve
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -60,13 +60,14 @@ function Services({ services }: { services: Array<MDXEntry<CaseStudy>> }) {
   return (
     <>
       <SectionIntro
-        title="Custom software, without the agency overhead"
+        title="Fix the workflow that keeps costing you time"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Pineflux builds the systems small businesses actually need: business
-          applications, integrations, ecommerce, and websites. Everything is
-          scoped honestly and built by the person you hired.
+          I build focused software for a specific business problem, from an
+          order system your team can trust to a website that brings in better
+          inquiries. You work directly with me from the first sketch through
+          launch.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -118,8 +119,9 @@ function FounderNote() {
           <figure className="mx-auto max-w-4xl">
             <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
               <p className="before:content-['\201C'] after:content-['\201D'] sm:before:absolute sm:before:right-full">
-                There is nobody here to hand you off to. I scope the work,
-                write the code, and answer the emails.
+                When you hire Pineflux, you get me. I learn the workflow,
+                recommend the fix, write the code, and stay with it through
+                launch.
               </p>
             </blockquote>
             <figcaption className="mt-10 text-base font-semibold text-neutral-950">
@@ -136,14 +138,14 @@ function WhyFounderLed() {
   return (
     <>
       <SectionIntro
-        eyebrow="Why a studio of one"
-        title="Small on purpose. Senior by default."
+        eyebrow="A studio of one"
+        title="You hire me. You work with me."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Agencies put layers between you and the person doing the work.
-          Pineflux removes them, and most of what makes working with me
-          different follows from that.
+          Pineflux stays small so decisions are faster and responsibility is
+          clear. The person making the recommendation is also the person who
+          has to build it and make it work.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -159,9 +161,9 @@ function WhyFounderLed() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
             <ListItem title="One point of contact">
-              The person you talk to on day one is the person who designs,
-              builds, and ships your project, so nothing gets lost between a
-              salesperson&apos;s promise and a developer&apos;s backlog.
+              Bring questions, changes, and concerns straight to me. You will
+              get an answer from the person who knows the project and can do
+              something about it.
             </ListItem>
             <ListItem title="Senior work only">
               Over a decade of professional experience building business
@@ -169,14 +171,14 @@ function WhyFounderLed() {
               goes into every project, including the small ones.
             </ListItem>
             <ListItem title="Built to be maintained">
-              Boring, proven technology and readable code. The goal is software
-              that still makes sense in five years, to me or to any developer
-              you hire after me.
+              I use proven technology and write readable code, with the
+              accounts and documentation in your name. Another capable
+              developer can take over without starting from scratch.
             </ListItem>
-            <ListItem title="Honest scope, honest pricing">
-              Pineflux takes on a small number of projects at a time. If your
-              project is a bad fit, or off-the-shelf software would serve you
-              better, you will hear that up front.
+            <ListItem title="Clear scope and pricing">
+              Before you commit, you will know what I recommend, what it will
+              cost, and where the uncertainty is. When an existing product is
+              the better buy, I will point you to it.
             </ListItem>
           </List>
         </div>
@@ -187,7 +189,7 @@ function WhyFounderLed() {
 
 export const metadata: Metadata = {
   description:
-    'Pineflux is a founder-led software studio in Seattle building business applications, integrations, and ecommerce for small businesses and entrepreneurs.',
+    'Pineflux builds custom business applications, systems integrations, ecommerce, and lead-generating websites for small businesses.',
 }
 
 export default async function Home() {
@@ -198,14 +200,15 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-            Software that fits the way your business actually works.
+            Custom software for the parts of your business that do not fit off
+            the shelf.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Pineflux is a small software studio in Seattle, run by Travis
-            Hayes. I build business applications, integrations, and ecommerce
-            for small businesses and entrepreneurs. Most of it is the
-            unglamorous software that keeps orders moving, systems in sync,
-            and reports accurate.
+            I&apos;m Travis Hayes, a software engineer in Seattle with more than
+            a decade of experience building the systems businesses run on. I
+            help small teams move orders faster, connect the tools they already
+            use, replace fragile spreadsheets, and turn more website visits
+            into inquiries.
           </p>
           <div className="mt-8 flex items-center gap-6">
             <Button href="/contact">Start a project</Button>

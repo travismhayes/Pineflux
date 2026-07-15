@@ -121,11 +121,12 @@ function NewsletterForm() {
         </label>
       </p>
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Practical software advice for your business
+        A useful note about business software
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        A short, occasional email on getting more out of the software that
-        runs your business. Written for owners, easy to unsubscribe from.
+        An occasional email for owners dealing with spreadsheets, disconnected
+        systems, custom software decisions, and websites that need to work
+        harder.
       </p>
       <div className="relative mt-6">
         <input

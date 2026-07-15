@@ -15,7 +15,7 @@ import { loadArticles } from '@/lib/mdx'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Plain-English writing about the software that runs small businesses: what to build, what to buy, and how to avoid expensive mistakes.',
+    'Practical guidance for small-business owners making decisions about custom software, integrations, websites, and the tools they already use.',
 }
 
 export default async function Blog() {
@@ -23,11 +23,11 @@ export default async function Blog() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="Blog" title="Software advice you can actually use">
+      <PageIntro eyebrow="Blog" title="Useful answers about business software">
         <p>
-          Plain-English writing about the software that runs small businesses:
-          what to build, what to buy, when spreadsheets are enough, and how to
-          avoid the expensive mistakes.
+          I write about the questions that come up before a software project:
+          whether to build or buy, when a spreadsheet has reached its limit,
+          and what makes an integration worth paying for.
         </p>
       </PageIntro>
 

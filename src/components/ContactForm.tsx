@@ -79,18 +79,17 @@ export function ContactForm() {
       <FadeIn className="lg:order-last">
         <div className="rounded-2xl border border-neutral-300 p-8">
           <h2 className="font-display text-base font-semibold text-neutral-950">
-            Thanks, your message is on its way
+            Got it. I&apos;ll be in touch.
           </h2>
           <p className="mt-4 text-base text-neutral-600">
-            You&apos;ll hear back within one business day. If it&apos;s urgent,
-            email{' '}
+            Expect a reply within one business day. You can also email{' '}
             <a
               href="mailto:hello@pineflux.com"
               className="font-semibold text-neutral-950"
             >
               hello@pineflux.com
             </a>{' '}
-            directly.
+            directly if you need to add anything.
           </p>
         </div>
       </FadeIn>
@@ -107,7 +106,7 @@ export function ContactForm() {
           </label>
         </p>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Project inquiries
+          Project details
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" required />
@@ -124,7 +123,7 @@ export function ContactForm() {
             autoComplete="organization"
           />
           <TextInput
-            label="What are you trying to solve?"
+            label="What would you like to fix or build?"
             name="message"
             required
           />
@@ -160,7 +159,7 @@ export function ContactForm() {
           className="mt-10"
           disabled={status === 'submitting'}
         >
-          {status === 'submitting' ? 'Sending…' : 'Send your message'}
+          {status === 'submitting' ? 'Sending…' : 'Send project details'}
         </Button>
       </form>
     </FadeIn>

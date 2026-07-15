@@ -2,9 +2,9 @@ import imageTravisHayes from '@/images/travis-hayes.jpg'
 
 export const article = {
   date: '2026-06-24',
-  title: 'What a systems integration actually does (in plain English)',
+  title: 'What a systems integration does for a small business',
   description:
-    'The most valuable software project most small businesses can buy is one nobody will ever see. Here is what an integration is, when you need one, and what to watch out for.',
+    'Learn what a systems integration does, how to judge whether one is worth the cost, and what to ask before hiring someone to build it.',
   author: {
     name: 'Travis Hayes',
     role: 'Founder',
@@ -17,29 +17,31 @@ export const metadata = {
   description: article.description,
 }
 
-Ask most business owners what software they'd love to have, and they describe something visible: a better website, a slick app, a dashboard. Almost nobody says "I'd like my systems to talk to each other." Yet in over a decade of building business software, the projects with the best payoff, dollar for dollar, have almost all been integrations.
+A systems integration is easy to overlook because your customers may never see it. It sits between the tools you already use and moves information from one to another.
+
+In my work with order management, billing, ERP, and ecommerce systems, integrations have often removed hours of routine entry without forcing a business to replace software its team already knows.
 
 ## The problem, in one sentence
 
-Your business runs on several systems, and the thing connecting them is a person with a keyboard.
+Your business runs on several systems. A person moves the information between them.
 
-The website takes orders, the accounting software makes invoices, the inventory lives in the point-of-sale, and the customer list lives in a CRM. None of them were designed to cooperate. So your team does what teams do: they export, they copy, they re-type. Every day.
+The website takes orders, the accounting software makes invoices, inventory lives in the point-of-sale system, and customer records sit in a CRM. Your team exports, copies, and retypes because the tools cannot exchange what they know.
 
-All that copying costs hours every week, and every re-keyed order is a chance to ship the wrong thing. It also gets worse as you grow: double your orders and you double the typing, which eventually means hiring someone to do work a computer should be doing.
+That work grows with sales volume. Twice as many orders can mean twice as much entry, checking, and correction. It also creates more opportunities to ship the wrong item, miss an invoice, or report an old inventory count.
 
 ## What an integration is
 
-An integration is a small piece of software whose only job is to move information between your systems automatically and correctly.
+An integration is software that reads information from one system and writes the right information to another. It can run when an event happens, such as a new order, or on a schedule.
 
-Order comes in on the website; it appears in your fulfillment system. Invoice gets paid; your accounting software records it. Stock runs low; the count updates everywhere at once. Nobody touched a keyboard.
+A web order can appear in the fulfillment system. A paid invoice can be recorded in accounting. An inventory change can update the storefront. People step in when something needs a decision instead of handling every record.
 
-That's the whole job. A good integration is invisible: things that used to be someone's task happen on their own, on schedule.
+A dependable integration also knows what to do when the data is incomplete or a system is unavailable. It retries safe operations, records what happened, and alerts someone when it needs help.
 
 ## When it's worth the money
 
-The math is usually simple. Add up the hours per week your team spends moving data between systems, add something for the errors (a mis-shipped order, a missed invoice, an inventory write-off), and compare it to the one-time cost of connecting the systems.
+Start with the hours your team spends moving and checking data each week. Add costs you can trace to errors, such as reshipping an order, correcting an invoice, or writing off inventory. Then compare that annual cost with the price of building and maintaining the connection.
 
-For many small businesses, that's a project that pays for itself inside a year and keeps paying forever. Very few visible software projects can say that.
+The same calculation can show that an integration is premature. If the task takes an hour a month or the source data changes constantly, a manual process may still be the sensible choice.
 
 Signs you're ready:
 
@@ -50,14 +52,14 @@ Signs you're ready:
 
 ## What to watch out for
 
-**Beware the rip-and-replace pitch.** Some vendors answer "my systems don't talk" with "replace all your systems with ours." Occasionally that's right. Usually it's a much bigger, riskier project than connecting what you already own and what your team already knows how to use.
+**Compare integration with replacement.** Replacing an old system can be the right decision when it is unreliable or holding back several parts of the business. If the software still does its main job well, connecting it may cost less and create less disruption. Ask for both options to be considered.
 
-**Ask what happens when it breaks.** The difference between a good integration and a time bomb is what happens when something goes wrong. Good ones log what they do, retry sensibly, and tell a human when they're stuck. If a developer can't explain their answer to "how will we know if it breaks?", keep looking.
+**Ask what happens when it breaks.** APIs go offline and individual records contain bad data. Your developer should be able to explain what gets retried, what gets logged, who receives an alert, and how a failed record is processed later.
 
-**Insist on documentation.** An undocumented integration will cost you the day its builder disappears. Whoever builds yours should leave behind a plain-English description of what connects to what, so any developer can pick it up later.
+**Ask to see the handoff.** You should receive a plain-English map of what connects to what, access to the code and accounts, and the technical details another developer would need to make a change.
 
 ## The short version
 
-If your team is the glue between your systems, you're already paying for an integration. You're paying for it in salary and errors instead of paying once to build it.
+An integration is worth exploring when routine data entry has become a meaningful operating cost. Measure that cost first, then solve the narrowest connection that gives your team useful time back.
 
-If you want help figuring out whether the math works for your particular mess of systems, [I'll give you an honest read for free](/contact).
+If you want help working through the numbers and the systems involved, [send me a description of the current process](/contact).

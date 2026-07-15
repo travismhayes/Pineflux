@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: 'Pineflux | Custom software for small businesses',
   },
   description:
-    'Pineflux is a founder-led software studio in Seattle building business applications, integrations, and ecommerce for small businesses and entrepreneurs.',
+    'Pineflux builds custom business applications, systems integrations, ecommerce, and lead-generating websites for small businesses.',
   openGraph: {
     type: 'website',
     siteName: 'Pineflux',
@@ -24,7 +24,7 @@ const jsonLd = {
   url: 'https://pineflux.com',
   email: 'hello@pineflux.com',
   description:
-    'Founder-led software studio building business applications, systems integrations, ecommerce, and websites for small businesses and entrepreneurs.',
+    'Seattle software studio building custom applications, systems integrations, ecommerce, and websites for small businesses.',
   founder: {
     '@type': 'Person',
     name: 'Travis Hayes',
