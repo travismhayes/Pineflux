@@ -30,6 +30,30 @@ function TextInput({
   )
 }
 
+function TextArea({
+  label,
+  ...props
+}: React.ComponentPropsWithoutRef<'textarea'> & { label: string }) {
+  let id = useId()
+
+  return (
+    <div className="group relative z-0 transition-all focus-within:z-10">
+      <textarea
+        id={id}
+        {...props}
+        placeholder=" "
+        className="peer block min-h-40 w-full resize-y border border-neutral-300 bg-transparent px-6 pt-12 pb-4 text-base/6 text-neutral-950 ring-4 ring-transparent transition group-first:rounded-t-2xl group-last:rounded-b-2xl focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
+      />
+      <label
+        htmlFor={id}
+        className="pointer-events-none absolute top-8 left-6 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-not-placeholder-shown:-translate-y-4 peer-not-placeholder-shown:scale-75 peer-not-placeholder-shown:font-semibold peer-not-placeholder-shown:text-neutral-950 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950"
+      >
+        {label}
+      </label>
+    </div>
+  )
+}
+
 function RadioInput({
   label,
   ...props
@@ -79,17 +103,18 @@ export function ContactForm() {
       <FadeIn className="lg:order-last">
         <div className="rounded-2xl border border-neutral-300 p-8">
           <h2 className="font-display text-base font-semibold text-neutral-950">
-            Got it. I&apos;ll be in touch.
+            Thanks, your message is on its way
           </h2>
           <p className="mt-4 text-base text-neutral-600">
-            Expect a reply within one business day. You can also email{' '}
+            You&apos;ll hear back within one business day. If it&apos;s urgent,
+            email{' '}
             <a
               href="mailto:hello@pineflux.com"
               className="font-semibold text-neutral-950"
             >
               hello@pineflux.com
             </a>{' '}
-            directly if you need to add anything.
+            directly.
           </p>
         </div>
       </FadeIn>
@@ -106,7 +131,7 @@ export function ContactForm() {
           </label>
         </p>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Project details
+          Project inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" required />
@@ -122,8 +147,8 @@ export function ContactForm() {
             name="company"
             autoComplete="organization"
           />
-          <TextInput
-            label="What would you like to fix or build?"
+          <TextArea
+            label="Describe the workflow or problem"
             name="message"
             required
           />
@@ -159,7 +184,7 @@ export function ContactForm() {
           className="mt-10"
           disabled={status === 'submitting'}
         >
-          {status === 'submitting' ? 'Sending…' : 'Send project details'}
+          {status === 'submitting' ? 'Sending…' : 'Send your message'}
         </Button>
       </form>
     </FadeIn>

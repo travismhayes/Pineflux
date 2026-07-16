@@ -17,10 +17,10 @@ function ContactDetails() {
         What happens next
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        I&apos;ll reply within one business day. If the project sounds like
-        something I can help with, we&apos;ll schedule a short call to get into
-        the workflow, timing, and budget. I&apos;ll tell you whether I would build
-        something custom, use an existing product, or take another route.
+        You&apos;ll get a reply from me, Travis, within one business day.
+        We&apos;ll set up a short call to talk through your project, and
+        you&apos;ll get an honest read on whether custom software is even the
+        right answer. The conversation is free and there&apos;s no obligation.
       </p>
 
       <Border className="mt-16 pt-16">
@@ -62,18 +62,22 @@ function ContactDetails() {
 }
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Discuss Your Software Project',
   description:
-    'Tell Travis at Pineflux what is slowing your business down and get a reply within one business day.',
+    'Tell Pineflux about your project. You will hear back from the founder within one business day.',
 }
 
 export default function Contact() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Contact" title="What would you like to work better?">
+      <PageIntro
+        eyebrow="Contact"
+        title="Tell me what is slowing your business down"
+      >
         <p>
-          Tell me what your business does, where the current process breaks
-          down, and what you would like to change. A few sentences is enough.
+          Tell me what the work looks like now, which systems are involved, and
+          where time or information gets lost. A few sentences is plenty to get
+          started.
         </p>
       </PageIntro>
 

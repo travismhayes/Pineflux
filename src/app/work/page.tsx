@@ -74,9 +74,9 @@ function Services({
 }
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Custom Software Services for Small Businesses',
   description:
-    'Custom business applications, systems integrations, ecommerce, and lead-generating websites, built directly with an experienced software engineer.',
+    'Custom business applications, systems integrations, ecommerce systems, and websites for small businesses with workflows their current tools cannot handle.',
 }
 
 export default async function Work() {
@@ -86,13 +86,13 @@ export default async function Work() {
     <RootLayout>
       <PageIntro
         eyebrow="Services"
-        title="Software work tied to a real business problem"
+        title="Custom software for the systems and workflows your business depends on."
       >
         <p>
-          Choose the problem that sounds closest to yours. I will help you
-          narrow the scope, compare a custom build with the tools already on
-          the market, and put a clear price around the work before you commit.
-          I handle every conversation and every line of code.
+          Pineflux focuses on integrations and business applications, with
+          related work in ecommerce systems and small-business websites. Every
+          project starts with the problem, the current workflow, and whether
+          custom software is worth the cost.
         </p>
       </PageIntro>
 

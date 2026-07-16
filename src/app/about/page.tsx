@@ -8,7 +8,6 @@ import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
-import { StatList, StatListItem } from '@/components/StatList'
 import imageTravisHayes from '@/images/travis-hayes.jpg'
 import { loadArticles } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -17,30 +16,31 @@ function HowIWork() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="How I work"
-        title="Direct access makes for better software"
+        eyebrow="How I decide what to build"
+        title="Custom software has to earn its cost"
         invert
       >
         <p>
-          You can ask a question, make a decision, and move the project forward
-          in the same conversation.
+          I look at the time a problem consumes, the errors it creates, how
+          often it happens, and what changes as the business grows.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Plain English" invert>
-            You should never need a translator for your own project. I explain
-            scope, trade-offs, and progress in the language of your business.
+          <GridListItem title="Follow the recurring cost" invert>
+            Repeated data entry, manual reconciliation, missed handoffs, and
+            unreliable reports are expensive because they happen again every
+            day, week, or month.
           </GridListItem>
-          <GridListItem title="Small by design" invert>
-            I limit the number of active projects so I have time to understand
-            the details and do the work myself. You get a realistic schedule
-            before you commit.
+          <GridListItem title="Use what already works" invert>
+            Sometimes the answer is a custom application. Sometimes two existing
+            systems need to be connected. Sometimes a product you can buy
+            already solves the problem.
           </GridListItem>
-          <GridListItem title="Built to hand off" invert>
-            You receive readable code, proven technology, and useful
-            documentation. Your business can keep working with me or hand the
-            project to another developer later.
+          <GridListItem title="Start with the smallest useful change" invert>
+            The first scope should solve a meaningful problem without trying to
+            rebuild the whole business at once. Results can guide what comes
+            next.
           </GridListItem>
         </GridList>
       </Container>
@@ -48,34 +48,44 @@ function HowIWork() {
   )
 }
 
-function Founder() {
+function Experience() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <div className="grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2 lg:items-center">
         <FadeIn>
           <div className="max-w-lg">
             <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
-              The person behind Pineflux
+              What I know well
             </h2>
             <div className="mt-6 space-y-6 text-base text-neutral-600">
               <p>
-                I&apos;m Travis Hayes, a software engineer in Seattle. I&apos;ve
-                spent over a decade building the software that businesses run
-                on: order management systems, ERP and API integrations, billing
-                automation, ecommerce platforms, and the internal tools that
-                keep operations moving.
+                <strong className="font-semibold text-neutral-950">
+                  Orders, inventory, and fulfillment.
+                </strong>{' '}
+                Systems that keep orders moving and give sales, operations,
+                warehouse, and field teams the same information.
               </p>
               <p>
-                I&apos;ve seen where business software earns its keep. Orders
-                move without being retyped, billing runs without a monthly
-                scramble, and the numbers people use to make decisions are
-                current. Pineflux focuses on that practical work.
+                <strong className="font-semibold text-neutral-950">
+                  Integrations and data flow.
+                </strong>{' '}
+                Connections between ERP, accounting, ecommerce, CRM, inventory,
+                and other systems that currently depend on exports or duplicate
+                entry.
               </p>
               <p>
-                Small businesses need experienced software help at a sensible
-                scale. Pineflux can take on the focused application,
-                integration, store, or website that is too specific for a
-                packaged tool and too small for a large agency team.
+                <strong className="font-semibold text-neutral-950">
+                  Billing and workflow automation.
+                </strong>{' '}
+                Tools that reduce repetitive preparation, reconciliation,
+                reporting, and administrative work.
+              </p>
+              <p>
+                <strong className="font-semibold text-neutral-950">
+                  Internal business applications.
+                </strong>{' '}
+                Focused applications, dashboards, and portals for workflows
+                packaged software does not handle well.
               </p>
             </div>
           </div>
@@ -103,9 +113,9 @@ function Founder() {
 }
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'About Travis Hayes',
   description:
-    'Meet Travis Hayes, the software engineer behind Pineflux, with more than a decade of experience in business applications, integrations, and ecommerce.',
+    'Meet Travis Hayes, a Seattle software engineer with more than a decade of experience in business applications, systems integration, billing automation, and ecommerce.',
 }
 
 export default async function About() {
@@ -113,40 +123,39 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="About" title="Senior software work, kept personal">
+      <PageIntro
+        eyebrow="About"
+        title="I’m Travis Hayes. I build software around how a business actually works."
+      >
         <p>
-          Pineflux is the software studio of Travis Hayes.
+          I&apos;ve spent more than a decade building order management systems,
+          billing automation, ERP and API integrations, ecommerce systems, and
+          internal business tools.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            I work with small-business owners who have a valuable problem
-            trapped between a spreadsheet, a packaged product, and a large
-            agency quote. I learn how the work moves through the business and
-            build the smallest useful solution.
+            That experience taught me to start with the workflow. I look for the
+            places where people repeat the same task, information gets lost, or
+            errors and delays cost the business money. Then I determine whether
+            the right answer is an integration, a focused application, a change
+            to an existing system, or something you can buy instead.
           </p>
           <p>
-            I handle the discovery, design, development, and launch myself.
-            Keeping that responsibility in one place lets me take on a limited
-            number of projects and give each one proper attention.
+            I started Pineflux to do that work for small businesses. I handle
+            each project from the first conversation through launch, so the
+            person learning how your business works is also the person designing
+            and building the solution.
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="10+" label="Years building business software" />
-          <StatListItem value="1" label="Person you talk to, start to finish" />
-          <StatListItem value="0" label="Layers between you and your developer" />
-        </StatList>
-      </Container>
-
-      <Founder />
+      <Experience />
 
       <HowIWork />
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Notes for business owners deciding what to build, what to buy, and when their current tools have become more expensive than replacing them."
+        title="Selected writing"
+        intro="Notes for business owners dealing with spreadsheets, disconnected systems, and software decisions: when to improve what you have, when to buy, and when custom work makes sense."
         pages={blogArticles}
       />
 

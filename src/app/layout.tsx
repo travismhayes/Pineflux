@@ -6,10 +6,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://pineflux.com'),
   title: {
     template: '%s | Pineflux',
-    default: 'Pineflux | Custom software for small businesses',
+    default:
+      'Custom Software & Systems Integration for Small Businesses | Pineflux',
   },
   description:
-    'Pineflux builds custom business applications, systems integrations, ecommerce, and lead-generating websites for small businesses.',
+    'Pineflux builds custom business applications, systems integrations, workflow automation, and ecommerce systems for small businesses.',
   openGraph: {
     type: 'website',
     siteName: 'Pineflux',
@@ -24,7 +25,7 @@ const jsonLd = {
   url: 'https://pineflux.com',
   email: 'hello@pineflux.com',
   description:
-    'Seattle software studio building custom applications, systems integrations, ecommerce, and websites for small businesses.',
+    'Custom business applications, systems integrations, workflow automation, ecommerce systems, and websites for small businesses.',
   founder: {
     '@type': 'Person',
     name: 'Travis Hayes',

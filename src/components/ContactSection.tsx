@@ -10,16 +10,16 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-balance text-white sm:text-4xl">
-              What is slowing your business down?
+              Tell me what is slowing your business down
             </h2>
             <p className="mt-6 text-base text-neutral-300">
-              Send me a few details about the problem, the tools involved, and
-              what a good result would change. I&apos;ll reply within one
-              business day with a useful next step.
+              A short description of the workflow, the systems involved, and the
+              current workaround is enough to start. I&apos;ll reply within one
+              business day.
             </p>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Start the conversation
+                Get in touch
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">

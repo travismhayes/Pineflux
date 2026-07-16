@@ -13,9 +13,9 @@ import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Small Business Software Advice',
   description:
-    'Practical guidance for small-business owners making decisions about custom software, integrations, websites, and the tools they already use.',
+    'Practical guidance for small businesses deciding when to improve existing software, buy a new system, or invest in custom work.',
 }
 
 export default async function Blog() {
@@ -23,11 +23,14 @@ export default async function Blog() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="Blog" title="Useful answers about business software">
+      <PageIntro
+        eyebrow="Blog"
+        title="Practical advice about business software"
+      >
         <p>
-          I write about the questions that come up before a software project:
-          whether to build or buy, when a spreadsheet has reached its limit,
-          and what makes an integration worth paying for.
+          Notes for business owners dealing with spreadsheets, disconnected
+          systems, and software decisions: when to improve what you have, when
+          to buy, and when custom work makes sense.
         </p>
       </PageIntro>
 
