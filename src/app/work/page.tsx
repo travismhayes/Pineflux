@@ -73,6 +73,27 @@ function Services({
   )
 }
 
+function OtherProjects() {
+  return (
+    <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <FadeIn className="max-w-2xl">
+        <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+          Does your problem fall somewhere between these services?
+        </h2>
+        <p className="mt-6 text-base text-neutral-600">
+          Some projects do not fit neatly into a category. If an existing
+          platform needs custom functionality, an old system needs attention, or
+          a workflow is becoming difficult to manage, tell me what is happening.
+          I can help determine the sensible next step.
+        </p>
+        <div className="mt-8">
+          <Button href="/contact">Tell me what is happening</Button>
+        </div>
+      </FadeIn>
+    </Container>
+  )
+}
+
 export const metadata: Metadata = {
   title: 'Custom Software Services for Small Businesses',
   description:
@@ -97,6 +118,8 @@ export default async function Work() {
       </PageIntro>
 
       <Services caseStudies={caseStudies} />
+
+      <OtherProjects />
 
       <ContactSection />
     </RootLayout>

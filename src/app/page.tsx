@@ -173,11 +173,12 @@ export default async function Home() {
             Software that fits the way your business actually works.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Pineflux builds custom tools and integrations for small businesses
-            losing time to spreadsheets, duplicate data entry, and systems that
-            do not stay in sync. I&apos;m Travis Hayes, a Seattle software
-            engineer with more than a decade of experience in order management,
-            billing automation, ecommerce, and ERP and API integrations.
+            Pineflux helps small businesses improve the software they rely on,
+            whether that means connecting systems, replacing a manual workflow,
+            building a focused application, or extending a platform they already
+            use. I&apos;m Travis Hayes, a Seattle software engineer with more
+            than a decade of experience in order management, billing automation,
+            ecommerce, and ERP and API integrations.
           </p>
           <div className="mt-8 flex items-center gap-6">
             <Button href="/contact">Start a project</Button>

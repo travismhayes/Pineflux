@@ -87,6 +87,15 @@ function Experience() {
                 Focused applications, dashboards, and portals for workflows
                 packaged software does not handle well.
               </p>
+              <p>
+                <strong className="font-semibold text-neutral-950">
+                  Existing platforms.
+                </strong>{' '}
+                I also customize and extend established platforms, including
+                Shopify, BigCommerce, and WordPress. That can mean adding
+                functionality, connecting another system, or improving a
+                workflow without replacing the whole platform.
+              </p>
             </div>
           </div>
         </FadeIn>
